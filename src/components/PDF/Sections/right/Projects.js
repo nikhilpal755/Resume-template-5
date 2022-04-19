@@ -5,7 +5,7 @@ const Projects = ({ projects }) => {
   return (
     <div>
       {projects.display && (
-        <View style={{ paddingTop: '20px' }}>
+        <View  style={{marginLeft: '10', marginTop: '4'}}>
           <Text
             style={{
               color: '#000',
@@ -14,14 +14,14 @@ const Projects = ({ projects }) => {
           >
             {projects.header}
           </Text>
-          <Divider />
+          {/* <Divider /> */}
           {projects.items.map((project, index) => (
             <View key={index}>
-              <Text style={{ fontSize: '13', marginVertical: '4' }}>
+              <Text style={{ fontSize: '12', marginVertical: '4' }}>
                 {project.name}
               </Text>
               <Text
-                style={{ fontSize: '11', marginTop: '4', marginLeft: '15px' }}
+                style={{ fontSize: '11', marginTop: '4', marginLeft: '2' }}
               >
                 {project.description}
               </Text>

@@ -13,7 +13,7 @@ const EmploymentHistory = ({ items }) => {
       >
         Employment History
       </Text>
-      <Divider />
+      {/* <Divider /> */}
       {items.map((item, index) => (
         <EmploymentHistoryItem
           key={index}

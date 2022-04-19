@@ -31,10 +31,11 @@ function App() {
         ],
       },
       {
-        header: 'Key Skills',
+        header: 'Additional Skills',
         type: 'KeySkills',
         display: true,
-        text: '• Knowledge of basic coding languages including C++, HTML5, and JavaScript.\n• Basic knowledge of  SQL, NoSQL databases\n• Knowledgable on Node.js, Spring, Hibernate\n• Extensive Linux/Unix experience\n• Software testing (Jest, Chai, Mocha)\n• CI/CD Basics ',
+        
+        items: ['• Brand Management', '• Content Management', '• Digital Marketing', '• Advertising', '• Social Media'],
       },
       {
         header: 'Employment History',
@@ -60,14 +61,19 @@ function App() {
         ],
       },
       {
-        header: 'Projects',
+        header: 'Selected Projects',
         type: 'Projects',
         display: true,
         items: [
           {
             name: 'Poker Simulator',
             description:
-              '• Built a full-stack app to allow users to stimulate and visualize outcomes \n    of poker hand against opponents\n • Utilized ski-kit learn in Python to simulate possible outcomes.\n • Used Javascript, Python, SQL, HTML/CSS',
+              '• Built a full-stack app to allow users to stimulate and visualize outcomes of poker hand against opponents\n • Used Javascript, Python, SQL, HTML/CSS',
+          },
+          {
+            name: 'Poker Simulator',
+            description:
+              '• Built a full-stack app to allow users to stimulate and visualize outcomes of poker hand against opponents\n  • Used Javascript, Python, SQL, HTML/CSS',
           },
         ],
       },
@@ -131,16 +137,30 @@ function App() {
         display: true,
         items: [
           {
+            name: 'Phone',
             text: '+61 01 012121',
           },
           {
-            text: 'eliot@example.com',
+            name: 'Email',
+            text: 'eliot@gmail.com',
           },
           {
-            text: 'www.eliotdev.com',
+            name: 'Address',
+            text: 'Texas,USA',
           },
         ],
-      },
+      },{
+        header: 'Additional Info',
+        type: 'Languages',
+        items: 'English, French, Spanish',
+      },{
+        header: 'Co Curricular Activities',
+        type: 'Achievements',
+        items: [
+          "• 1st position, inter college debate competition, NYU'19",
+          "• 1st position, national level elocution competition, NYU'19",
+        ]
+      }
     ],
   })
   const getComponentData = (type) => {
